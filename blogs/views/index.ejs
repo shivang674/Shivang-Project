@@ -1,0 +1,13 @@
+<% -include('./partials/header') %>
+<h1>display all blogs</h1>
+<article>
+    <%for(let blog of allblogs){%>
+        <div>
+            <h1> <%blog.id%></h1>
+            <h2><%blog.title%></h2>
+            <h3><%blog.author%></h3>
+            <p><%blog.comment%></p>
+        </div>
+    <%}%>
+</article>
+<%- include('./partials/footer') %>
